@@ -15,6 +15,10 @@ function App() {
       <Button variant="text">Text</Button>
       <Button variant="contained" color="success">Contained</Button>
       <Button variant="outlined">Outlined</Button>
+      <Button variant="contained">Hello world</Button>
+      <Button variant="text">Text</Button>
+      <Button variant="contained" color="success">Contained</Button>
+      <Button variant="outlined">Outlined</Button>
       <br />
       <AccessAlarmIcon />
       <ThreeDRotation />
