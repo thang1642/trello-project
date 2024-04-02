@@ -17,14 +17,15 @@ import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 
 function AppBar() {
   return (
-    <Box px={2} sx={{
+    <Box sx={{
       width: '100%',
       height: (theme) => theme.trello.appBarBarHeight,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
       gap: 2,
-      overflowX: 'auto'
+      overflowX: 'auto',
+      paddingX: 2
     }}>
       <Box sx={{ display:'flex', alignItems : 'center', gap : 2 }}>
         <AppsIcon sx={{ color: 'primary.main' }} />

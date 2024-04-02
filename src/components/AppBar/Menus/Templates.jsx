@@ -27,7 +27,6 @@ function Templates() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
         endIcon={<ExpandMoreIcon />}
-        sx={{ textTransform: 'capitalize' }}
       >
         Templates
       </Button>
