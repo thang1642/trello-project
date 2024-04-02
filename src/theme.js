@@ -1,5 +1,6 @@
 import { experimental_extendTheme as extendTheme } from '@mui/material/styles'
 import { teal, cyan, deepOrange, orange } from '@mui/material/colors'
+import Typography from '@mui/material/Typography'
 
 // Create a theme instance.
 const theme = extendTheme({
@@ -23,6 +24,15 @@ const theme = extendTheme({
   },
   components: {
     // Name of the component
+    MuiButton: {
+      styleOverrides: {
+      // Name of the slot
+        root: {
+        // Some CSS
+          textTransform : 'none'
+        }
+      }
+    },
     MuiCssBaseline: {
       styleOverrides:{
         body:{
@@ -36,15 +46,6 @@ const theme = extendTheme({
           },
           '*::-webkit-scrollbar-thumb:hover': {
             backgroundColor:'#00b894'
-          }
-        }
-      },
-      MuiButton: {
-        styleOverrides: {
-        // Name of the slot
-          root: {
-          // Some CSS
-            textTransform : 'none'
           }
         }
       },

@@ -13,8 +13,7 @@ function ModeSelect() {
     const selectedModed = event.target.value
     //console.log(selectedModed)
     setMode(selectedModed)
-}
-
+  }
   return (
     <FormControl sx={{ m:1, minWidth:'120px' }} size="small">
       <InputLabel id="label-select-dark-light-mode">Mode</InputLabel>
