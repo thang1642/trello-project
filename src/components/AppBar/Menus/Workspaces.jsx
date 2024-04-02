@@ -31,7 +31,6 @@ function Workspaces() {
         aria-expanded={open ? 'true' : undefined}
         onClick={handleClick}
         endIcon={<ExpandMoreIcon />}
-        sx={{ textTransform: 'capitalize' }}
       >
         Workspaces
       </Button>
