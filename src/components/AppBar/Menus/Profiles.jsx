@@ -32,7 +32,7 @@ function Profiles() {
           aria-haspopup="true"
           aria-expanded={open ? 'true' : undefined}
         >
-          <Avatar sx={{ width: 30, height: 32 }}
+          <Avatar sx={{ width: 36, height: 32 }}
             alt='My Avartar'
             src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-1/357702238_3603315476610507_8982723095499143758_n.jpg?stp=dst-jpg_p200x200&_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mKfdSofX3TcAX9XV1Rz&_nc_ht=scontent.fvca1-1.fna&oh=00_AfDExxeYMQJTGUR4Y4I6ihcc1xxEzJc0hZ0g1isuSvGzWQ&oe=6610A29E"
           />

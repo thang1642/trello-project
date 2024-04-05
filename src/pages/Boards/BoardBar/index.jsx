@@ -8,14 +8,16 @@ import FilterListIcon from '@mui/icons-material/FilterList'
 import Avatar from '@mui/material/Avatar'
 import AvatarGroup from '@mui/material/AvatarGroup'
 import { Tooltip } from '@mui/material'
+import PersonAddIcon from '@mui/icons-material/PersonAdd'
+import Button from '@mui/material/Button'
 const MENU_STYLE = {
-  color: 'primary.main',
-  bgcolor:'white',
+  color: 'white',
+  bgcolor:'transparent',
   paddingX:'5px',
   border: 'none',
   borderRadius: '4px',
   '& .MuiSvgIcon-root':{
-    color: 'primary.main'
+    color: 'white'
   },
   '&:hover':{
     bgcolor: 'primary.50'
@@ -24,7 +26,6 @@ const MENU_STYLE = {
 function BoardBar() {
   return (
     <Box sx={{
-      backgroundColor: 'primary.dark',
       width: '100%',
       height: (theme) => theme.trello.boardBarHeight,
       display: 'flex',
@@ -32,7 +33,9 @@ function BoardBar() {
       justifyContent: 'space-between',
       gap: 2,
       overflowX: 'auto',
-      paddingX: 2
+      paddingX: 2,
+      backgroundColor: (theme) => (theme.palette.mode === 'dark' ? '#34495e' : '#1976d2'),
+      borderBottom:  '1px solid white'
     }}>
       <Box sx={{ display:'flex', alignItems : 'center', gap : 2 }}>
         <Chip
@@ -67,12 +70,24 @@ function BoardBar() {
         />
       </Box>
       <Box sx={{ display:'flex', alignItems : 'center', gap : 2 }}>
-        <AvatarGroup max={4}
+        <Button
+          variant="outlined"
+          startIcon={<PersonAddIcon />}
           sx={{
+            color : 'white',
+            borderColor:'white',
+            '&:hover': { borderColor:'black' } }}
+        >
+          Invite
+        </Button>
+        <AvatarGroup max={7}
+          sx={{
+            gap : '10px',
             '& .MuiAvatar-root':{
               width : 34,
               height : 34,
-              fontSize : 16
+              fontSize : 16,
+              border:'none'
             }
           }}
         >
@@ -90,6 +105,24 @@ function BoardBar() {
           </Tooltip>
           <Tooltip title="Thang1642">
             <Avatar alt="Remy Sharp" src="https://yt3.ggpht.com/yti/ANjgQV_X2zuhd8cIt5J5Suzuq2PWxT7vkQk7YivghH2UQQ=s88-c-k-c0x00ffffff-no-rj" />
+          </Tooltip>
+          <Tooltip title="Thang1642">
+            <Avatar alt="Remy Sharp" src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-1/358622856_825640255592554_8857504027307656852_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YQzd7HwBFmkAX-8oRJH&_nc_ht=scontent.fvca1-1.fna&oh=00_AfCGlSjuQdNrx0bmvbA8zzYp88LHEuTESoXq5nYlWUOYtw&oe=6611E065" />
+          </Tooltip>
+          <Tooltip title="Thang1642">
+            <Avatar alt="Remy Sharp" src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-1/358622856_825640255592554_8857504027307656852_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YQzd7HwBFmkAX-8oRJH&_nc_ht=scontent.fvca1-1.fna&oh=00_AfCGlSjuQdNrx0bmvbA8zzYp88LHEuTESoXq5nYlWUOYtw&oe=6611E065" />
+          </Tooltip>
+          <Tooltip title="Thang1642">
+            <Avatar alt="Remy Sharp" src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-1/358622856_825640255592554_8857504027307656852_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YQzd7HwBFmkAX-8oRJH&_nc_ht=scontent.fvca1-1.fna&oh=00_AfCGlSjuQdNrx0bmvbA8zzYp88LHEuTESoXq5nYlWUOYtw&oe=6611E065" />
+          </Tooltip>
+          <Tooltip title="Thang1642">
+            <Avatar alt="Remy Sharp" src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-1/358622856_825640255592554_8857504027307656852_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YQzd7HwBFmkAX-8oRJH&_nc_ht=scontent.fvca1-1.fna&oh=00_AfCGlSjuQdNrx0bmvbA8zzYp88LHEuTESoXq5nYlWUOYtw&oe=6611E065" />
+          </Tooltip>
+          <Tooltip title="Thang1642">
+            <Avatar alt="Remy Sharp" src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-1/358622856_825640255592554_8857504027307656852_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YQzd7HwBFmkAX-8oRJH&_nc_ht=scontent.fvca1-1.fna&oh=00_AfCGlSjuQdNrx0bmvbA8zzYp88LHEuTESoXq5nYlWUOYtw&oe=6611E065" />
+          </Tooltip>
+          <Tooltip title="Thang1642">
+            <Avatar alt="Remy Sharp" src="https://scontent.fvca1-1.fna.fbcdn.net/v/t39.30808-1/358622856_825640255592554_8857504027307656852_n.jpg?stp=c0.0.40.40a_cp0_dst-jpg_p40x40&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_ohc=YQzd7HwBFmkAX-8oRJH&_nc_ht=scontent.fvca1-1.fna&oh=00_AfCGlSjuQdNrx0bmvbA8zzYp88LHEuTESoXq5nYlWUOYtw&oe=6611E065" />
           </Tooltip>
         </AvatarGroup>
       </Box>
