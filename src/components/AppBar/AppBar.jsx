@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import Box from '@mui/material/Box'
-import ModeSelect from '~/components/ModeSelect'
+import ModeSelect from '~/components/ModeSelect/ModeSelect'
 import AppsIcon from '@mui/icons-material/Apps'
 import { ReactComponent as TrelloIcon } from '~/assets/mdi--trello.svg'
 import SvgIcon from '@mui/material/SvgIcon'
@@ -17,10 +17,10 @@ import NotificationNonIcon from '@mui/icons-material/Notifications'
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline'
 import SearchIcon from '@mui/icons-material/Search'
 import InputAdornment from '@mui/material/InputAdornment'
-import CloseIcon from '@mui/icons-material/Close';
+import CloseIcon from '@mui/icons-material/Close'
 
 function AppBar() {
-  const [searchValue,setSearchValue] = useState('')
+  const [searchValue, setSearchValue] = useState('')
   return (
     <Box sx={{
       width: '100%',
@@ -31,7 +31,8 @@ function AppBar() {
       gap: 2,
       paddingX: 2,
       overflowX: 'auto',
-      backgroundColor: (theme) => (theme.palette.mode === 'dark' ? '#2c3e50' : '#1565c0')
+      backgroundColor: (theme) => (theme.palette.mode === 'dark' ? '#2c3e50' : '#1565c0'),
+      '&::-webkit-scrollbar-track': { m: 2 }
     }}>
       <Box sx={{ display:'flex', alignItems : 'center', gap : 2 }}>
 
